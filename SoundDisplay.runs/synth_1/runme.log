@@ -1,0 +1,1251 @@
+
+*** Running vivado
+    with args -log Top_Student.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source Top_Student.tcl
+
+
+****** Vivado v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source Top_Student.tcl -notrace
+Command: synth_design -top Top_Student -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6940 
+WARNING: [Synth 8-2292] literal value truncated to fit in 9 bits [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:332]
+WARNING: [Synth 8-2292] literal value truncated to fit in 9 bits [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:350]
+WARNING: [Synth 8-2292] literal value truncated to fit in 9 bits [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:368]
+WARNING: [Synth 8-2292] literal value truncated to fit in 9 bits [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:386]
+WARNING: [Synth 8-2292] literal value truncated to fit in 9 bits [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:404]
+WARNING: [Synth 8-2292] literal value truncated to fit in 9 bits [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:422]
+WARNING: [Synth 8-2292] literal value truncated to fit in 9 bits [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:440]
+WARNING: [Synth 8-2292] literal value truncated to fit in 9 bits [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:458]
+WARNING: [Synth 8-2292] literal value truncated to fit in 9 bits [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:476]
+WARNING: [Synth 8-2292] literal value truncated to fit in 9 bits [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:494]
+WARNING: [Synth 8-2292] literal value truncated to fit in 9 bits [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:512]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:03 . Memory (MB): peak = 416.563 ; gain = 159.902
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'Top_Student' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+INFO: [Synth 8-6157] synthesizing module 'timers' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/timers.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'timers' (1#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/timers.v:23]
+INFO: [Synth 8-6157] synthesizing module 'pulse' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'flip_flop' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/pulse.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'flip_flop' (2#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/pulse.v:36]
+INFO: [Synth 8-6155] done synthesizing module 'pulse' (3#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/pulse.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Oled_Display' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+	Parameter Width bound to: 96 - type: integer 
+	Parameter Height bound to: 64 - type: integer 
+	Parameter PixelCount bound to: 6144 - type: integer 
+	Parameter PixelCountWidth bound to: 13 - type: integer 
+	Parameter ClkFreq bound to: 6250000 - type: integer 
+	Parameter FrameFreq bound to: 60 - type: integer 
+	Parameter FrameDiv bound to: 104166 - type: integer 
+	Parameter FrameDivWidth bound to: 17 - type: integer 
+	Parameter PowerDelay bound to: 20 - type: integer 
+	Parameter ResetDelay bound to: 3 - type: integer 
+	Parameter VccEnDelay bound to: 20 - type: integer 
+	Parameter StartupCompleteDelay bound to: 100 - type: integer 
+	Parameter MaxDelay bound to: 100 - type: integer 
+	Parameter MaxDelayCount bound to: 625000 - type: integer 
+	Parameter StateCount bound to: 32 - type: integer 
+	Parameter StateWidth bound to: 5 - type: integer 
+	Parameter PowerUp bound to: 5'b00000 
+	Parameter Reset bound to: 5'b00001 
+	Parameter ReleaseReset bound to: 5'b00011 
+	Parameter EnableDriver bound to: 5'b00010 
+	Parameter DisplayOff bound to: 5'b00110 
+	Parameter SetRemapDisplayFormat bound to: 5'b00111 
+	Parameter SetStartLine bound to: 5'b00101 
+	Parameter SetOffset bound to: 5'b00100 
+	Parameter SetNormalDisplay bound to: 5'b01100 
+	Parameter SetMultiplexRatio bound to: 5'b01101 
+	Parameter SetMasterConfiguration bound to: 5'b01111 
+	Parameter DisablePowerSave bound to: 5'b01110 
+	Parameter SetPhaseAdjust bound to: 5'b01010 
+	Parameter SetDisplayClock bound to: 5'b01011 
+	Parameter SetSecondPrechargeA bound to: 5'b01001 
+	Parameter SetSecondPrechargeB bound to: 5'b01000 
+	Parameter SetSecondPrechargeC bound to: 5'b11000 
+	Parameter SetPrechargeLevel bound to: 5'b11001 
+	Parameter SetVCOMH bound to: 5'b11011 
+	Parameter SetMasterCurrent bound to: 5'b11010 
+	Parameter SetContrastA bound to: 5'b11110 
+	Parameter SetContrastB bound to: 5'b11111 
+	Parameter SetContrastC bound to: 5'b11101 
+	Parameter DisableScrolling bound to: 5'b11100 
+	Parameter ClearScreen bound to: 5'b10100 
+	Parameter VccEn bound to: 5'b10101 
+	Parameter DisplayOn bound to: 5'b10111 
+	Parameter PrepareNextFrame bound to: 5'b10110 
+	Parameter SetColAddress bound to: 5'b10010 
+	Parameter SetRowAddress bound to: 5'b10011 
+	Parameter WaitNextFrame bound to: 5'b10001 
+	Parameter SendPixel bound to: 5'b10000 
+	Parameter SpiCommandMaxWidth bound to: 40 - type: integer 
+	Parameter SpiCommandBitCountWidth bound to: 6 - type: integer 
+INFO: [Synth 8-226] default block is never used [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:124]
+INFO: [Synth 8-226] default block is never used [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:201]
+WARNING: [Synth 8-693] zero replication count - replication ignored [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:349]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_Display' (4#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Display.v:36]
+INFO: [Synth 8-6157] synthesizing module 'Audio_Capture' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'Audio_Capture' (5#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Audio_Capture.v:25]
+INFO: [Synth 8-6157] synthesizing module 'peaking_algorithm' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/peaking_algorithm.v:23]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/peaking_algorithm.v:153]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/peaking_algorithm.v:185]
+INFO: [Synth 8-6155] done synthesizing module 'peaking_algorithm' (6#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/peaking_algorithm.v:23]
+INFO: [Synth 8-6157] synthesizing module 'coordinates' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/coordinates.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'coordinates' (7#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/coordinates.v:23]
+INFO: [Synth 8-6157] synthesizing module 'state_ctrl' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/state_ctrl.v:23]
+INFO: [Synth 8-6155] done synthesizing module 'state_ctrl' (8#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/state_ctrl.v:23]
+INFO: [Synth 8-6157] synthesizing module 'menu' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'menu_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu_sprite.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'menu_rom' (9#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu_sprite.v:1]
+WARNING: [Synth 8-689] width (8) of port connection 'row' does not match port width (6) of module 'menu_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu.v:29]
+WARNING: [Synth 8-689] width (8) of port connection 'col' does not match port width (7) of module 'menu_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu.v:29]
+INFO: [Synth 8-6157] synthesizing module 'menu1_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu1_sprite.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'menu1_rom' (10#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu1_sprite.v:1]
+WARNING: [Synth 8-689] width (8) of port connection 'row' does not match port width (6) of module 'menu1_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu.v:30]
+WARNING: [Synth 8-689] width (8) of port connection 'col' does not match port width (7) of module 'menu1_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu.v:30]
+INFO: [Synth 8-6157] synthesizing module 'menu2_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu2_sprite.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'menu2_rom' (11#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu2_sprite.v:1]
+WARNING: [Synth 8-689] width (8) of port connection 'row' does not match port width (6) of module 'menu2_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu.v:31]
+WARNING: [Synth 8-689] width (8) of port connection 'col' does not match port width (7) of module 'menu2_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu.v:31]
+INFO: [Synth 8-6157] synthesizing module 'menu3_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu3_sprite.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'menu3_rom' (12#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu3_sprite.v:1]
+WARNING: [Synth 8-689] width (8) of port connection 'row' does not match port width (6) of module 'menu3_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu.v:32]
+WARNING: [Synth 8-689] width (8) of port connection 'col' does not match port width (7) of module 'menu3_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'menu' (13#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/menu.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Oled_vol' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Vol.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Oled_vol' (14#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Vol.v:1]
+INFO: [Synth 8-6157] synthesizing module 'handcuffs' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuffs.v:23]
+INFO: [Synth 8-6157] synthesizing module 'handcuff_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuff.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'handcuff_rom' (15#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuff.v:22]
+WARNING: [Synth 8-689] width (8) of port connection 'row' does not match port width (6) of module 'handcuff_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuffs.v:114]
+WARNING: [Synth 8-689] width (8) of port connection 'col' does not match port width (7) of module 'handcuff_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuffs.v:114]
+INFO: [Synth 8-6157] synthesizing module 'handcuff1_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuff1.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'handcuff1_rom' (16#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuff1.v:3]
+WARNING: [Synth 8-689] width (8) of port connection 'row' does not match port width (6) of module 'handcuff1_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuffs.v:115]
+WARNING: [Synth 8-689] width (8) of port connection 'col' does not match port width (7) of module 'handcuff1_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuffs.v:115]
+INFO: [Synth 8-6157] synthesizing module 'handcuff2_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuff2.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'handcuff2_rom' (17#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuff2.v:3]
+WARNING: [Synth 8-689] width (8) of port connection 'row' does not match port width (6) of module 'handcuff2_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuffs.v:116]
+WARNING: [Synth 8-689] width (8) of port connection 'col' does not match port width (7) of module 'handcuff2_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuffs.v:116]
+INFO: [Synth 8-6157] synthesizing module 'handcuff_broken_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuff3.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'handcuff_broken_rom' (18#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuff3.v:3]
+WARNING: [Synth 8-689] width (8) of port connection 'row' does not match port width (6) of module 'handcuff_broken_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuffs.v:117]
+WARNING: [Synth 8-689] width (8) of port connection 'col' does not match port width (7) of module 'handcuff_broken_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuffs.v:117]
+INFO: [Synth 8-6155] done synthesizing module 'handcuffs' (19#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuffs.v:23]
+WARNING: [Synth 8-689] width (3) of port connection 'state' does not match port width (2) of module 'handcuffs' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:166]
+WARNING: [Synth 8-689] width (8) of port connection 'pass1' does not match port width (7) of module 'handcuffs' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:174]
+WARNING: [Synth 8-689] width (8) of port connection 'pass2' does not match port width (7) of module 'handcuffs' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:175]
+WARNING: [Synth 8-689] width (8) of port connection 'pass3' does not match port width (7) of module 'handcuffs' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:176]
+WARNING: [Synth 8-689] width (8) of port connection 'pass4' does not match port width (7) of module 'handcuffs' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:177]
+INFO: [Synth 8-6157] synthesizing module 'corridor' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/corridor.v:23]
+INFO: [Synth 8-6157] synthesizing module 'Background_corridor_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Background_corridor_sprite.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Background_corridor_rom' (20#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Background_corridor_sprite.v:1]
+WARNING: [Synth 8-689] width (8) of port connection 'row' does not match port width (6) of module 'Background_corridor_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/corridor.v:78]
+WARNING: [Synth 8-689] width (8) of port connection 'col' does not match port width (7) of module 'Background_corridor_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/corridor.v:78]
+INFO: [Synth 8-6157] synthesizing module 'maincharacter_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/maincharacter_sprite.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'maincharacter_rom' (21#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/maincharacter_sprite.v:1]
+WARNING: [Synth 8-689] width (8) of port connection 'row' does not match port width (4) of module 'maincharacter_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/corridor.v:79]
+WARNING: [Synth 8-689] width (8) of port connection 'col' does not match port width (3) of module 'maincharacter_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/corridor.v:79]
+INFO: [Synth 8-6157] synthesizing module 'Imagewithstuff_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Imagewithstuff_sprite.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Imagewithstuff_rom' (22#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Imagewithstuff_sprite.v:1]
+WARNING: [Synth 8-689] width (8) of port connection 'row' does not match port width (4) of module 'Imagewithstuff_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/corridor.v:80]
+WARNING: [Synth 8-689] width (8) of port connection 'col' does not match port width (3) of module 'Imagewithstuff_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/corridor.v:80]
+INFO: [Synth 8-6157] synthesizing module 'Background_corridor_trapdooropen_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Background_corridor_trapdooropen_sprite.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Background_corridor_trapdooropen_rom' (23#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Background_corridor_trapdooropen_sprite.v:1]
+WARNING: [Synth 8-689] width (8) of port connection 'row' does not match port width (6) of module 'Background_corridor_trapdooropen_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/corridor.v:81]
+WARNING: [Synth 8-689] width (8) of port connection 'col' does not match port width (7) of module 'Background_corridor_trapdooropen_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/corridor.v:81]
+INFO: [Synth 8-6157] synthesizing module 'Guardkills_hero21_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Guardkills_hero21_sprite.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Guardkills_hero21_rom' (24#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Guardkills_hero21_sprite.v:1]
+WARNING: [Synth 8-689] width (8) of port connection 'row' does not match port width (6) of module 'Guardkills_hero21_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/corridor.v:82]
+WARNING: [Synth 8-689] width (8) of port connection 'col' does not match port width (7) of module 'Guardkills_hero21_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/corridor.v:82]
+WARNING: [Synth 8-6014] Unused sequential element flag_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/corridor.v:170]
+INFO: [Synth 8-6155] done synthesizing module 'corridor' (25#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/corridor.v:23]
+WARNING: [Synth 8-689] width (6) of port connection 'volume' does not match port width (5) of module 'corridor' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:185]
+WARNING: [Synth 8-689] width (3) of port connection 'state' does not match port width (2) of module 'corridor' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:187]
+WARNING: [Synth 8-689] width (8) of port connection 'pass1' does not match port width (7) of module 'corridor' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:197]
+WARNING: [Synth 8-689] width (8) of port connection 'pass2' does not match port width (7) of module 'corridor' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:198]
+WARNING: [Synth 8-689] width (8) of port connection 'pass3' does not match port width (7) of module 'corridor' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:199]
+WARNING: [Synth 8-689] width (8) of port connection 'pass4' does not match port width (7) of module 'corridor' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:200]
+INFO: [Synth 8-6157] synthesizing module 'glass' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/glass.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'row' does not match port width (4) of module 'maincharacter_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/glass.v:56]
+WARNING: [Synth 8-689] width (8) of port connection 'col' does not match port width (3) of module 'maincharacter_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/glass.v:56]
+INFO: [Synth 8-6157] synthesizing module 'glassminorcracks_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/glassminorcracks_sprite.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'glassminorcracks_rom' (26#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/glassminorcracks_sprite.v:1]
+INFO: [Synth 8-6157] synthesizing module 'smithereens_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/smithereens_sprite.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'smithereens_rom' (27#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/smithereens_sprite.v:1]
+INFO: [Synth 8-6157] synthesizing module 'Glassstillok_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Glassstillok_sprite.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'Glassstillok_rom' (28#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Glassstillok_sprite.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'glass' (29#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/glass.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'row' does not match port width (6) of module 'glass' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:213]
+WARNING: [Synth 8-689] width (8) of port connection 'column' does not match port width (7) of module 'glass' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:214]
+INFO: [Synth 8-6157] synthesizing module 'fight' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/fight.v:23]
+INFO: [Synth 8-6157] synthesizing module 'truespiderman_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:1]
+WARNING: [Synth 8-151] case item 9'b000010000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b000110000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b001010000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b001110000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b010010000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b010110000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b011010000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b011110000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b100001000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b100010000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b000110000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b001010000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b100110000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b001110000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b010010000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b101010000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b010110000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b011010000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b101110000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b011110000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b100010000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b110010000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b100110000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b101010000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b110110000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+WARNING: [Synth 8-151] case item 9'b101110000 is unreachable [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'truespiderman_rom' (30#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truespiderman_sprite.v:1]
+WARNING: [Synth 8-689] width (8) of port connection 'row' does not match port width (5) of module 'truespiderman_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/fight.v:83]
+WARNING: [Synth 8-689] width (8) of port connection 'col' does not match port width (4) of module 'truespiderman_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/fight.v:83]
+INFO: [Synth 8-6157] synthesizing module 'truevenom_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truevenom_sprite.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'truevenom_rom' (31#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/truevenom_sprite.v:1]
+WARNING: [Synth 8-689] width (8) of port connection 'row' does not match port width (6) of module 'truevenom_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/fight.v:84]
+WARNING: [Synth 8-689] width (8) of port connection 'col' does not match port width (6) of module 'truevenom_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/fight.v:84]
+INFO: [Synth 8-6157] synthesizing module 'rooftop_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/rooftop_sprite.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'rooftop_rom' (32#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/rooftop_sprite.v:1]
+INFO: [Synth 8-6157] synthesizing module 'venompunch_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/venompunch_sprite.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'venompunch_rom' (33#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/venompunch_sprite.v:1]
+INFO: [Synth 8-6157] synthesizing module 'spideypunch_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/spideypunch_sprite.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'spideypunch_rom' (34#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/Desktop/Corridor game/spideypunch_sprite.v:1]
+INFO: [Synth 8-6157] synthesizing module 'healthdown_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/healthdown_sprite.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'healthdown_rom' (35#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/healthdown_sprite.v:1]
+INFO: [Synth 8-6157] synthesizing module 'koscreen_rom' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/koscreen_sprite.v:1]
+INFO: [Synth 8-6155] done synthesizing module 'koscreen_rom' (36#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/imports/visha/koscreen_sprite.v:1]
+WARNING: [Synth 8-6014] Unused sequential element attackforthefirsttimevenom_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/fight.v:143]
+WARNING: [Synth 8-6014] Unused sequential element venomattackspidey_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/fight.v:144]
+WARNING: [Synth 8-6014] Unused sequential element spideyattacksvenom_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/fight.v:150]
+INFO: [Synth 8-6155] done synthesizing module 'fight' (37#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/fight.v:23]
+WARNING: [Synth 8-689] width (8) of port connection 'row' does not match port width (6) of module 'fight' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:257]
+WARNING: [Synth 8-689] width (8) of port connection 'column' does not match port width (7) of module 'fight' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:258]
+INFO: [Synth 8-6157] synthesizing module 'disp' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display.v:23]
+WARNING: [Synth 8-567] referenced signal 'state' should be on the sensitivity list [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display.v:62]
+WARNING: [Synth 8-567] referenced signal 'seg_data_vol' should be on the sensitivity list [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display.v:62]
+WARNING: [Synth 8-567] referenced signal 'an_data_vol' should be on the sensitivity list [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display.v:62]
+WARNING: [Synth 8-567] referenced signal 'seg_data_corridor' should be on the sensitivity list [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display.v:62]
+WARNING: [Synth 8-567] referenced signal 'an_data_corridor' should be on the sensitivity list [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display.v:62]
+INFO: [Synth 8-6155] done synthesizing module 'disp' (38#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Display.v:23]
+WARNING: [Synth 8-689] width (7) of port connection 'seg_data_vol' does not match port width (8) of module 'disp' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:280]
+WARNING: [Synth 8-689] width (7) of port connection 'seg_data_corridor' does not match port width (8) of module 'disp' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:282]
+WARNING: [Synth 8-689] width (7) of port connection 'seg_data' does not match port width (8) of module 'disp' [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:284]
+INFO: [Synth 8-6155] done synthesizing module 'Top_Student' (39#1) [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Top_Student.v:18]
+WARNING: [Synth 8-3331] design disp has unconnected port clk
+WARNING: [Synth 8-3331] design handcuffs has unconnected port row[7]
+WARNING: [Synth 8-3331] design handcuffs has unconnected port row[6]
+WARNING: [Synth 8-3331] design handcuffs has unconnected port column[7]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port JC[2]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 668.125 ; gain = 411.465
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 668.125 ; gain = 411.465
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 668.125 ; gain = 411.465
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+Finished Parsing XDC File [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/constrs_1/new/Basys3_Master.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/Top_Student_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/Top_Student_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 903.230 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 903.230 ; gain = 646.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 903.230 ; gain = 646.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:22 ; elapsed = 00:00:24 . Memory (MB): peak = 903.230 ; gain = 646.570
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'Oled_Display'
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "fsm_next_state0" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/peaking_algorithm.v:54]
+INFO: [Synth 8-5546] ROM "first_seg" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "color_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "color_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "color_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "color_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "menu_state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Oled_Vol.v:31]
+WARNING: [Synth 8-6014] Unused sequential element color_data_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuff.v:32]
+WARNING: [Synth 8-6014] Unused sequential element color_data_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuff1.v:13]
+WARNING: [Synth 8-6014] Unused sequential element color_data_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuff2.v:13]
+WARNING: [Synth 8-6014] Unused sequential element color_data_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuff3.v:13]
+WARNING: [Synth 8-6014] Unused sequential element color_data_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Background_corridor_sprite.v:11]
+WARNING: [Synth 8-6014] Unused sequential element color_data_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Background_corridor_trapdooropen_sprite.v:11]
+WARNING: [Synth 8-6014] Unused sequential element color_data_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Guardkills_hero21_sprite.v:11]
+INFO: [Synth 8-5544] ROM "sprite2_col" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "lv_up" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "show_combi2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "an_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sprite2_col" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "lv_up" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "show_combi2" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "an_data" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "dead" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element color_data_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/glassminorcracks_sprite.v:11]
+WARNING: [Synth 8-6014] Unused sequential element color_data_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/smithereens_sprite.v:11]
+WARNING: [Synth 8-6014] Unused sequential element color_data_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Glassstillok_sprite.v:11]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/fight.v:125]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/fight.v:121]
+INFO: [Synth 8-5546] ROM "gameover" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "oled_spidey_data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gameover" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "oled_spidey_data" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 PowerUp | 00000000100000000000000000000000 |                            00000
+                   Reset | 00000000000100000000000000000000 |                            00001
+            ReleaseReset | 00000000000000000000100000000000 |                            00011
+            EnableDriver | 00000000000000000001000000000000 |                            00010
+              DisplayOff | 00000000000000000100000000000000 |                            00110
+   SetRemapDisplayFormat | 00000100000000000000000000000000 |                            00111
+            SetStartLine | 00001000000000000000000000000000 |                            00101
+               SetOffset | 10000000000000000000000000000000 |                            00100
+        SetNormalDisplay | 00000000000000000000000010000000 |                            01100
+       SetMultiplexRatio | 00000000000000000000000000100000 |                            01101
+  SetMasterConfiguration | 00000000000000000000000001000000 |                            01111
+        DisablePowerSave | 00000000000000000000000000000100 |                            01110
+          SetPhaseAdjust | 00000000000000000000000000001000 |                            01010
+         SetDisplayClock | 00000000001000000000000000000000 |                            01011
+     SetSecondPrechargeA | 00000000010000000000000000000000 |                            01001
+     SetSecondPrechargeB | 01000000000000000000000000000000 |                            01000
+     SetSecondPrechargeC | 00000010000000000000000000000000 |                            11000
+       SetPrechargeLevel | 00000001000000000000000000000000 |                            11001
+                SetVCOMH | 00000000000000010000000000000000 |                            11011
+        SetMasterCurrent | 00000000000000100000000000000000 |                            11010
+            SetContrastA | 00000000000001000000000000000000 |                            11110
+            SetContrastB | 00100000000000000000000000000000 |                            11111
+            SetContrastC | 00000000000000000000000000000001 |                            11101
+        DisableScrolling | 00000000000000000000000000000010 |                            11100
+             ClearScreen | 00000000000000000000000000010000 |                            10100
+                   VccEn | 00010000000000000000000000000000 |                            10101
+               DisplayOn | 00000000000010000000000000000000 |                            10111
+        PrepareNextFrame | 00000000000000001000000000000000 |                            10110
+           SetColAddress | 00000000000000000000010000000000 |                            10010
+           SetRowAddress | 00000000000000000000000100000000 |                            10011
+           WaitNextFrame | 00000000000000000000001000000000 |                            10001
+               SendPixel | 00000000000000000010000000000000 |                            10000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'Oled_Display'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:04 ; elapsed = 00:02:06 . Memory (MB): peak = 903.230 ; gain = 646.570
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input     10 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 8     
+	   2 Input      9 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 17    
+	   3 Input      8 Bit       Adders := 6     
+	   2 Input      7 Bit       Adders := 3     
+	   2 Input      6 Bit       Adders := 2     
+	   2 Input      5 Bit       Adders := 5     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 3     
+	   3 Input      1 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               33 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 18    
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 3     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 8     
+	                7 Bit    Registers := 10    
+	                6 Bit    Registers := 3     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 4     
+	                3 Bit    Registers := 3     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 53    
++---ROMs : 
+	                              ROMs := 10    
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	   2 Input     33 Bit        Muxes := 5     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 17    
+	   4 Input     16 Bit        Muxes := 1     
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input     14 Bit        Muxes := 1     
+	 608 Input     13 Bit        Muxes := 1     
+	 625 Input     13 Bit        Muxes := 1     
+	 671 Input     13 Bit        Muxes := 1     
+	 734 Input     13 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 14    
+	   3 Input      8 Bit        Muxes := 1     
+	  18 Input      7 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 3     
+	   6 Input      7 Bit        Muxes := 1     
+	   3 Input      7 Bit        Muxes := 4     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 2     
+	   2 Input      5 Bit        Muxes := 7     
+	  32 Input      5 Bit        Muxes := 2     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 6     
+	   6 Input      4 Bit        Muxes := 1     
+	   8 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   5 Input      3 Bit        Muxes := 1     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 86    
+	   6 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module timers 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module flip_flop 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module Oled_Display 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               40 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	                6 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     40 Bit        Muxes := 3     
+	  32 Input     32 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 2     
+	  32 Input     20 Bit        Muxes := 1     
+	   2 Input     17 Bit        Muxes := 1     
+	  32 Input      6 Bit        Muxes := 1     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	  32 Input      5 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 2     
+Module Audio_Capture 
+Detailed RTL Component Info : 
++---Registers : 
+	               12 Bit    Registers := 2     
+	                1 Bit    Registers := 1     
+Module peaking_algorithm 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     14 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               14 Bit    Registers := 1     
+	               12 Bit    Registers := 1     
+	                7 Bit    Registers := 4     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 2     
+	   2 Input     14 Bit        Muxes := 1     
+	  18 Input      7 Bit        Muxes := 3     
+	   2 Input      7 Bit        Muxes := 3     
+	   6 Input      7 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   6 Input      4 Bit        Muxes := 1     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+	   6 Input      1 Bit        Muxes := 1     
+	  16 Input      1 Bit        Muxes := 1     
+	  18 Input      1 Bit        Muxes := 1     
+Module state_ctrl 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module menu_rom 
+Detailed RTL Component Info : 
++---Muxes : 
+	 608 Input     13 Bit        Muxes := 1     
+Module menu1_rom 
+Detailed RTL Component Info : 
++---Muxes : 
+	 625 Input     13 Bit        Muxes := 1     
+Module menu2_rom 
+Detailed RTL Component Info : 
++---Muxes : 
+	 671 Input     13 Bit        Muxes := 1     
+Module menu3_rom 
+Detailed RTL Component Info : 
++---Muxes : 
+	 734 Input     13 Bit        Muxes := 1     
+Module menu 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 2     
+	   3 Input      1 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                3 Bit    Registers := 1     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 3     
+	   4 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+Module Oled_vol 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 2     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 1     
++---Muxes : 
+	   8 Input     16 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module handcuff_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module handcuff1_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module handcuff2_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module handcuff_broken_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module handcuffs 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     33 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 4     
+	   2 Input      4 Bit       Adders := 1     
+	   2 Input      1 Bit       Adders := 1     
++---Registers : 
+	               33 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                7 Bit    Registers := 4     
+	                5 Bit    Registers := 4     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input     33 Bit        Muxes := 5     
+	   2 Input     16 Bit        Muxes := 6     
+	   3 Input      7 Bit        Muxes := 4     
+	   2 Input      5 Bit        Muxes := 4     
+	   2 Input      4 Bit        Muxes := 4     
+	   2 Input      1 Bit        Muxes := 10    
+Module Background_corridor_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Background_corridor_trapdooropen_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Guardkills_hero21_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module corridor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 1     
+	   3 Input      9 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 7     
+	   3 Input      8 Bit       Adders := 3     
+	   2 Input      7 Bit       Adders := 1     
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	               10 Bit    Registers := 1     
+	                8 Bit    Registers := 3     
+	                7 Bit    Registers := 1     
+	                4 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 4     
+	   8 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 17    
+Module glassminorcracks_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module smithereens_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module Glassstillok_rom 
+Detailed RTL Component Info : 
++---Registers : 
+	               16 Bit    Registers := 1     
++---ROMs : 
+	                              ROMs := 1     
+Module glass 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      9 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 3     
+	   3 Input      8 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 2     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 6     
+	   2 Input      8 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 22    
+Module fight 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      9 Bit       Adders := 2     
+	   3 Input      9 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 7     
+	   3 Input      8 Bit       Adders := 2     
+	   2 Input      6 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                8 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 3     
+	   2 Input      6 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 10    
+Module disp 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5545] ROM "out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "fsm_next_state0" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "twentykhz/out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "thirtykhz/out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "fps/out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "frame1/color_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "frame2/color_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "frame3/color_data" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "frame4/color_data" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element locked/color_data_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuff.v:32]
+WARNING: [Synth 8-6014] Unused sequential element shaking1/color_data_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuff1.v:13]
+WARNING: [Synth 8-6014] Unused sequential element shaking2/color_data_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuff2.v:13]
+WARNING: [Synth 8-6014] Unused sequential element breakout/color_data_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/handcuff3.v:13]
+INFO: [Synth 8-5545] ROM "travelontrapdoor/out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "traveltotrapdoor/out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "randomname/out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5546] ROM "show_combi2" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element background/color_data_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Background_corridor_sprite.v:11]
+WARNING: [Synth 8-6014] Unused sequential element fall/color_data_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Background_corridor_trapdooropen_sprite.v:11]
+WARNING: [Synth 8-6014] Unused sequential element death/color_data_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Guardkills_hero21_sprite.v:11]
+INFO: [Synth 8-5545] ROM "ledclockglass/out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "traveltotrapdoor/out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-6014] Unused sequential element glasiscracked/color_data_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/glassminorcracks_sprite.v:11]
+WARNING: [Synth 8-6014] Unused sequential element destroyed/color_data_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/smithereens_sprite.v:11]
+WARNING: [Synth 8-6014] Unused sequential element glassstanding/color_data_reg was removed.  [C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.srcs/sources_1/new/Glassstillok_sprite.v:11]
+INFO: [Synth 8-5545] ROM "out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+INFO: [Synth 8-5545] ROM "out0" won't be mapped to RAM because address size (32) is larger than maximum supported(25)
+WARNING: [Synth 8-3331] design disp has unconnected port clk
+WARNING: [Synth 8-3331] design handcuffs has unconnected port row[7]
+WARNING: [Synth 8-3331] design handcuffs has unconnected port row[6]
+WARNING: [Synth 8-3331] design handcuffs has unconnected port column[7]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port JC[2]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[9]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[8]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[7]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[6]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[5]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[4]
+WARNING: [Synth 8-3331] design Top_Student has unconnected port sw[3]
+INFO: [Synth 8-3886] merging instance 'vol_disp/pixel_data_reg[0]' (FDRE) to 'vol_disp/pixel_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'vol_disp/pixel_data_reg[1]' (FDRE) to 'vol_disp/pixel_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'my_menu/oled_data_menu_reg[1]' (FDS) to 'my_menu/oled_data_menu_reg[15]'
+INFO: [Synth 8-3886] merging instance 'vol_disp/pixel_data_reg[2]' (FDRE) to 'vol_disp/pixel_data_reg[3]'
+INFO: [Synth 8-3886] merging instance 'my_menu/oled_data_menu_reg[2]' (FDS) to 'my_menu/oled_data_menu_reg[15]'
+INFO: [Synth 8-3886] merging instance 'my_menu/oled_data_menu_reg[3]' (FDS) to 'my_menu/oled_data_menu_reg[15]'
+INFO: [Synth 8-3886] merging instance 'my_menu/oled_data_menu_reg[4]' (FDS) to 'my_menu/oled_data_menu_reg[15]'
+INFO: [Synth 8-3886] merging instance 'vol_disp/pixel_data_reg[5]' (FDRE) to 'vol_disp/pixel_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vol_disp/pixel_data_reg[6]' (FDRE) to 'vol_disp/pixel_data_reg[7]'
+INFO: [Synth 8-3886] merging instance 'vol_disp/pixel_data_reg[8]' (FDRE) to 'vol_disp/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'vol_disp/pixel_data_reg[9]' (FDRE) to 'vol_disp/pixel_data_reg[10]'
+INFO: [Synth 8-3886] merging instance 'vol_disp/pixel_data_reg[12]' (FDRE) to 'vol_disp/pixel_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'vol_disp/pixel_data_reg[13]' (FDRE) to 'vol_disp/pixel_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'my_menu/oled_data_menu_reg[13]' (FDS) to 'my_menu/oled_data_menu_reg[15]'
+INFO: [Synth 8-3886] merging instance 'vol_disp/pixel_data_reg[14]' (FDRE) to 'vol_disp/pixel_data_reg[15]'
+INFO: [Synth 8-3886] merging instance 'my_menu/oled_data_menu_reg[14]' (FDS) to 'my_menu/oled_data_menu_reg[15]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lv1/\sprite1_col_reg[7] )
+INFO: [Synth 8-3886] merging instance 'lv0/pass4_reg[0]' (FDSE) to 'lv0/pass3_reg[0]'
+INFO: [Synth 8-3886] merging instance 'lv0/pass3_reg[0]' (FDSE) to 'lv0/pass2_reg[0]'
+INFO: [Synth 8-3886] merging instance 'lv0/pass2_reg[0]' (FDSE) to 'lv0/pass1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'peakvsmic/third_seg_reg[0]' (FDE) to 'peakvsmic/third_seg_reg[3]'
+INFO: [Synth 8-3886] merging instance 'lv0/pass4_reg[1]' (FDSE) to 'lv0/pass4_reg[2]'
+INFO: [Synth 8-3886] merging instance 'lv0/pass3_reg[1]' (FDSE) to 'lv0/pass3_reg[2]'
+INFO: [Synth 8-3886] merging instance 'lv0/pass2_reg[1]' (FDSE) to 'lv0/pass2_reg[2]'
+INFO: [Synth 8-3886] merging instance 'lv0/pass1_reg[1]' (FDSE) to 'lv0/pass1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'peakvsmic/first_seg_reg[1]' (FDE) to 'peakvsmic/first_seg_reg[6]'
+INFO: [Synth 8-3886] merging instance 'peakvsmic/third_seg_reg[1]' (FDE) to 'peakvsmic/third_seg_reg[2]'
+INFO: [Synth 8-3886] merging instance 'lv0/pass4_reg[2]' (FDSE) to 'lv0/pass4_reg[6]'
+INFO: [Synth 8-3886] merging instance 'lv0/pass3_reg[2]' (FDSE) to 'lv0/pass3_reg[6]'
+INFO: [Synth 8-3886] merging instance 'lv0/pass2_reg[2]' (FDSE) to 'lv0/pass2_reg[6]'
+INFO: [Synth 8-3886] merging instance 'lv0/pass1_reg[2]' (FDSE) to 'lv0/pass1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'peakvsmic/third_seg_reg[2]' (FDE) to 'peakvsmic/first_seg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'peakvsmic/third_seg_reg[3]' (FDE) to 'peakvsmic/third_seg_reg[4]'
+INFO: [Synth 8-3886] merging instance 'lv0/pass4_reg[4]' (FDRE) to 'lv0/pass4_reg[5]'
+INFO: [Synth 8-3886] merging instance 'lv0/pass3_reg[4]' (FDRE) to 'lv0/pass4_reg[5]'
+INFO: [Synth 8-3886] merging instance 'lv0/pass2_reg[4]' (FDRE) to 'lv0/pass4_reg[5]'
+INFO: [Synth 8-3886] merging instance 'lv0/pass1_reg[4]' (FDRE) to 'lv0/pass4_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (peakvsmic/\first_seg_reg[4] )
+INFO: [Synth 8-3886] merging instance 'peakvsmic/third_seg_reg[4]' (FDE) to 'peakvsmic/third_seg_reg[5]'
+INFO: [Synth 8-3886] merging instance 'lv0/pass4_reg[5]' (FDRE) to 'lv0/pass3_reg[5]'
+INFO: [Synth 8-3886] merging instance 'lv0/pass3_reg[5]' (FDRE) to 'lv0/pass2_reg[5]'
+INFO: [Synth 8-3886] merging instance 'lv0/pass2_reg[5]' (FDRE) to 'lv0/pass1_reg[5]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (lv0/\pass1_reg[5] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (my_menu/\opt_selected_reg[2] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (peakvsmic/\num_reg[5] )
+WARNING: [Synth 8-3332] Sequential element (num_reg[5]) is unused and will be removed from module peaking_algorithm.
+WARNING: [Synth 8-3332] Sequential element (first_seg_reg[4]) is unused and will be removed from module peaking_algorithm.
+WARNING: [Synth 8-3332] Sequential element (opt_selected_reg[2]) is unused and will be removed from module menu.
+WARNING: [Synth 8-3332] Sequential element (pass1_reg[5]) is unused and will be removed from module handcuffs.
+WARNING: [Synth 8-3332] Sequential element (left_sig/a/Q_reg) is unused and will be removed from module corridor.
+WARNING: [Synth 8-3332] Sequential element (left_sig/b/Q_reg) is unused and will be removed from module corridor.
+WARNING: [Synth 8-3332] Sequential element (right_sig/a/Q_reg) is unused and will be removed from module corridor.
+WARNING: [Synth 8-3332] Sequential element (right_sig/b/Q_reg) is unused and will be removed from module corridor.
+WARNING: [Synth 8-3332] Sequential element (sprite1_col_reg[7]) is unused and will be removed from module corridor.
+WARNING: [Synth 8-3332] Sequential element (out_reg) is unused and will be removed from module timers__11.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:06:05 ; elapsed = 00:06:08 . Memory (MB): peak = 1154.930 ; gain = 898.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++-------------------------------------+------------------------------+---------------+----------------+
+|Module Name                          | RTL Object                   | Depth x Width | Implemented As | 
++-------------------------------------+------------------------------+---------------+----------------+
+|handcuff_rom                         | color_data_reg               | 8192x16       | Block RAM      | 
+|handcuff1_rom                        | color_data_reg               | 8192x16       | Block RAM      | 
+|handcuff2_rom                        | color_data_reg               | 8192x16       | Block RAM      | 
+|handcuff_broken_rom                  | color_data_reg               | 8192x16       | Block RAM      | 
+|Background_corridor_rom              | color_data_reg               | 8192x16       | Block RAM      | 
+|maincharacter_rom                    | color_data                   | 128x16        | LUT            | 
+|Imagewithstuff_rom                   | color_data                   | 128x16        | LUT            | 
+|Background_corridor_trapdooropen_rom | color_data_reg               | 8192x16       | Block RAM      | 
+|Guardkills_hero21_rom                | color_data_reg               | 8192x16       | Block RAM      | 
+|glassminorcracks_rom                 | color_data_reg               | 8192x16       | Block RAM      | 
+|smithereens_rom                      | color_data_reg               | 8192x16       | Block RAM      | 
+|Glassstillok_rom                     | color_data_reg               | 8192x16       | Block RAM      | 
+|truespiderman_rom                    | color_data                   | 512x16        | LUT            | 
+|truevenom_rom                        | color_data                   | 4096x16       | LUT            | 
+|rooftop_rom                          | color_data                   | 8192x16       | LUT            | 
+|venompunch_rom                       | color_data                   | 8192x16       | LUT            | 
+|spideypunch_rom                      | color_data                   | 8192x16       | LUT            | 
+|healthdown_rom                       | color_data                   | 8192x16       | LUT            | 
+|koscreen_rom                         | color_data                   | 8192x16       | LUT            | 
+|peaking_algorithm                    | fourth_seg                   | 32x7          | LUT            | 
+|handcuffs                            | shaking1/color_data_reg      | 8192x16       | Block RAM      | 
+|handcuffs                            | shaking2/color_data_reg      | 8192x16       | Block RAM      | 
+|handcuffs                            | locked/color_data_reg        | 8192x16       | Block RAM      | 
+|handcuffs                            | breakout/color_data_reg      | 8192x16       | Block RAM      | 
+|corridor                             | testing/color_data           | 128x16        | LUT            | 
+|corridor                             | guard_corridor/color_data    | 128x16        | LUT            | 
+|corridor                             | fall/color_data_reg          | 8192x16       | Block RAM      | 
+|corridor                             | death/color_data_reg         | 8192x16       | Block RAM      | 
+|corridor                             | background/color_data_reg    | 8192x16       | Block RAM      | 
+|glass                                | glassstanding/color_data_reg | 8192x16       | Block RAM      | 
+|glass                                | glasiscracked/color_data_reg | 8192x16       | Block RAM      | 
+|glass                                | destroyed/color_data_reg     | 8192x16       | Block RAM      | 
+|glass                                | mcglass/color_data           | 128x16        | LUT            | 
+|truespiderman_rom                    | color_data                   | 512x16        | LUT            | 
+|truevenom_rom                        | color_data                   | 4096x16       | LUT            | 
+|venompunch_rom                       | color_data                   | 8192x16       | LUT            | 
+|spideypunch_rom                      | color_data                   | 8192x16       | LUT            | 
+|healthdown_rom                       | color_data                   | 8192x16       | LUT            | 
+|koscreen_rom                         | color_data                   | 8192x16       | LUT            | 
++-------------------------------------+------------------------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4480] The timing for the instance lv0/i_0/shaking1/color_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/i_0/shaking1/color_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/i_0/shaking1/color_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/i_0/shaking1/color_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/i_1/shaking2/color_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/i_1/shaking2/color_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/i_1/shaking2/color_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/i_1/shaking2/color_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/i_2/locked/color_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/i_2/locked/color_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/i_2/locked/color_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/i_2/locked/color_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/i_3/breakout/color_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/i_3/breakout/color_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/i_3/breakout/color_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/i_3/breakout/color_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/i_1/fall/color_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/i_1/fall/color_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/i_1/fall/color_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/i_1/fall/color_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/i_2/death/color_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/i_2/death/color_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/i_2/death/color_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/i_2/death/color_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/i_3/background/color_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/i_3/background/color_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/i_3/background/color_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/i_3/background/color_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/i_0/glassstanding/color_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/i_0/glassstanding/color_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/i_0/glassstanding/color_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/i_0/glassstanding/color_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/i_1/glasiscracked/color_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/i_1/glasiscracked/color_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/i_1/glasiscracked/color_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/i_1/glasiscracked/color_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/i_2/destroyed/color_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/i_2/destroyed/color_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/i_2/destroyed/color_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/i_2/destroyed/color_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:06:13 ; elapsed = 00:06:18 . Memory (MB): peak = 1154.930 ; gain = 898.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:06:18 ; elapsed = 00:06:22 . Memory (MB): peak = 1154.930 ; gain = 898.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (lv2/sprite1_col_reg[7]) is unused and will be removed from module Top_Student.
+INFO: [Synth 8-3886] merging instance 'vol_disp/left_sig/a/Q_reg' (FD) to 'my_menu/left_sig/a/Q_reg'
+INFO: [Synth 8-3886] merging instance 'vol_disp/left_sig/b/Q_reg' (FD) to 'my_menu/left_sig/b/Q_reg'
+INFO: [Synth 8-3886] merging instance 'vol_disp/right_sig/a/Q_reg' (FD) to 'my_menu/right_sig/a/Q_reg'
+INFO: [Synth 8-3886] merging instance 'vol_disp/right_sig/b/Q_reg' (FD) to 'my_menu/right_sig/b/Q_reg'
+INFO: [Synth 8-3886] merging instance 'my_menu/right_sig/a/Q_reg' (FD) to 'lv0/right_sig/a/Q_reg'
+INFO: [Synth 8-3886] merging instance 'my_menu/left_sig/a/Q_reg' (FD) to 'lv0/left_sig/a/Q_reg'
+INFO: [Synth 8-3886] merging instance 'my_menu/left_sig/b/Q_reg' (FD) to 'lv0/left_sig/b/Q_reg'
+INFO: [Synth 8-3886] merging instance 'my_menu/set_sig/a/Q_reg' (FD) to 'reset_sig/a/Q_reg'
+INFO: [Synth 8-3886] merging instance 'my_menu/set_sig/b/Q_reg' (FD) to 'reset_sig/b/Q_reg'
+INFO: [Synth 8-3886] merging instance 'lv0/right_sig/b/Q_reg' (FD) to 'my_menu/right_sig/b/Q_reg'
+INFO: [Synth 8-3886] merging instance 'lv0/reset_timer/a/Q_reg' (FD) to 'reset_sig/a/Q_reg'
+INFO: [Synth 8-3886] merging instance 'lv0/reset_timer/b/Q_reg' (FD) to 'reset_sig/b/Q_reg'
+INFO: [Synth 8-4480] The timing for the instance lv0/shaking1/color_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/shaking1/color_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/shaking1/color_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/shaking1/color_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/shaking2/color_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/shaking2/color_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/shaking2/color_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/shaking2/color_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/locked/color_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/locked/color_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/locked/color_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/locked/color_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/breakout/color_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/breakout/color_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/breakout/color_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv0/breakout/color_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/fall/color_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/fall/color_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/fall/color_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/fall/color_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/death/color_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/death/color_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/death/color_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/death/color_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/background/color_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/background/color_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/background/color_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv1/background/color_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/glassstanding/color_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/glassstanding/color_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/glassstanding/color_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/glassstanding/color_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/glasiscracked/color_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/glasiscracked/color_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/glasiscracked/color_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/glasiscracked/color_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/destroyed/color_data_reg_0 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/destroyed/color_data_reg_1 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/destroyed/color_data_reg_2 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+INFO: [Synth 8-4480] The timing for the instance lv2/destroyed/color_data_reg_3 (implemented as a block RAM) might be sub-optimal as no optional output register could be merged into the block ram. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:06:24 ; elapsed = 00:06:29 . Memory (MB): peak = 1154.930 ; gain = 898.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6064] Net column[5] is driving 40 big block pins (URAM, BRAM and DSP loads). Created 10 replicas of its driver. 
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:06:26 ; elapsed = 00:06:31 . Memory (MB): peak = 1154.930 ; gain = 898.270
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:06:26 ; elapsed = 00:06:31 . Memory (MB): peak = 1154.930 ; gain = 898.270
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:06:27 ; elapsed = 00:06:32 . Memory (MB): peak = 1154.930 ; gain = 898.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:06:30 ; elapsed = 00:06:35 . Memory (MB): peak = 1154.930 ; gain = 898.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:06:31 ; elapsed = 00:06:36 . Memory (MB): peak = 1154.930 ; gain = 898.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:06:31 ; elapsed = 00:06:36 . Memory (MB): peak = 1154.930 ; gain = 898.270
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------------+------+
+|      |Cell        |Count |
++------+------------+------+
+|1     |BUFG        |     3|
+|2     |CARRY4      |   195|
+|3     |LUT1        |    33|
+|4     |LUT2        |   227|
+|5     |LUT3        |   594|
+|6     |LUT4        |   434|
+|7     |LUT5        |  1149|
+|8     |LUT6        |  9596|
+|9     |MUXF7       |  3620|
+|10    |MUXF8       |  1328|
+|11    |RAMB36E1    |     1|
+|12    |RAMB36E1_1  |     1|
+|13    |RAMB36E1_10 |     1|
+|14    |RAMB36E1_11 |     1|
+|15    |RAMB36E1_12 |     1|
+|16    |RAMB36E1_13 |     1|
+|17    |RAMB36E1_14 |     1|
+|18    |RAMB36E1_15 |     1|
+|19    |RAMB36E1_16 |     1|
+|20    |RAMB36E1_17 |     1|
+|21    |RAMB36E1_18 |     1|
+|22    |RAMB36E1_19 |     1|
+|23    |RAMB36E1_2  |     1|
+|24    |RAMB36E1_20 |     1|
+|25    |RAMB36E1_21 |     1|
+|26    |RAMB36E1_22 |     1|
+|27    |RAMB36E1_23 |     1|
+|28    |RAMB36E1_24 |     1|
+|29    |RAMB36E1_25 |     1|
+|30    |RAMB36E1_26 |     1|
+|31    |RAMB36E1_27 |     1|
+|32    |RAMB36E1_28 |     1|
+|33    |RAMB36E1_29 |     1|
+|34    |RAMB36E1_3  |     1|
+|35    |RAMB36E1_30 |     1|
+|36    |RAMB36E1_31 |     1|
+|37    |RAMB36E1_32 |     1|
+|38    |RAMB36E1_33 |     1|
+|39    |RAMB36E1_34 |     1|
+|40    |RAMB36E1_35 |     1|
+|41    |RAMB36E1_36 |     1|
+|42    |RAMB36E1_37 |     1|
+|43    |RAMB36E1_38 |     1|
+|44    |RAMB36E1_39 |     1|
+|45    |RAMB36E1_4  |     1|
+|46    |RAMB36E1_5  |     1|
+|47    |RAMB36E1_6  |     1|
+|48    |RAMB36E1_7  |     1|
+|49    |RAMB36E1_8  |     1|
+|50    |RAMB36E1_9  |     1|
+|51    |FDRE        |   867|
+|52    |FDRE_1      |    31|
+|53    |FDSE        |    34|
+|54    |FDSE_1      |     1|
+|55    |IBUF        |    16|
+|56    |OBUF        |    36|
+|57    |OBUFT       |     1|
++------+------------+------+
+
+Report Instance Areas: 
++------+---------------------+-------------------------------------+------+
+|      |Instance             |Module                               |Cells |
++------+---------------------+-------------------------------------+------+
+|1     |top                  |                                     | 18205|
+|2     |  a                  |timers                               |    63|
+|3     |  b                  |timers_0                             |    64|
+|4     |  lv0                |handcuffs                            |   241|
+|5     |    breakout         |handcuff_broken_rom                  |    22|
+|6     |    down_sig         |pulse_14                             |    12|
+|7     |      a              |flip_flop_23                         |     1|
+|8     |      b              |flip_flop_24                         |    11|
+|9     |    left_sig         |pulse_15                             |    15|
+|10    |      a              |flip_flop_21                         |    12|
+|11    |      b              |flip_flop_22                         |     3|
+|12    |    locked           |handcuff_rom                         |     5|
+|13    |    right_sig        |pulse_16                             |    11|
+|14    |      a              |flip_flop_20                         |    11|
+|15    |    shaking1         |handcuff1_rom                        |     5|
+|16    |    shaking2         |handcuff2_rom                        |     5|
+|17    |    up_sig           |pulse_17                             |    43|
+|18    |      a              |flip_flop_18                         |    42|
+|19    |      b              |flip_flop_19                         |     1|
+|20    |  lv1                |corridor                             |   501|
+|21    |    testing          |maincharacter_rom                    |    13|
+|22    |    guard_corridor   |Imagewithstuff_rom                   |    13|
+|23    |    background       |Background_corridor_rom              |    20|
+|24    |    death            |Guardkills_hero21_rom                |    11|
+|25    |    fall             |Background_corridor_trapdooropen_rom |    17|
+|26    |    randomname       |timers_11                            |    53|
+|27    |    travelontrapdoor |timers_12                            |    55|
+|28    |    traveltotrapdoor |timers_13                            |    56|
+|29    |  lv2                |glass                                |   289|
+|30    |    destroyed        |smithereens_rom                      |     6|
+|31    |    glasiscracked    |glassminorcracks_rom                 |     5|
+|32    |    glassstanding    |Glassstillok_rom                     |    37|
+|33    |    ledclockglass    |timers_9                             |    51|
+|34    |    traveltotrapdoor |timers_10                            |    56|
+|35    |  microphone         |Audio_Capture                        |    76|
+|36    |  my_menu            |menu                                 |   100|
+|37    |    fps              |timers_6                             |    55|
+|38    |    right_sig        |pulse_7                              |     1|
+|39    |      b              |flip_flop_8                          |     1|
+|40    |  peakvsmic          |peaking_algorithm                    |   348|
+|41    |    thirtykhz        |timers_4                             |    55|
+|42    |    twentykhz        |timers_5                             |    53|
+|43    |  reset_sig          |pulse                                |    66|
+|44    |    a                |flip_flop                            |    57|
+|45    |    b                |flip_flop_3                          |     9|
+|46    |  state_check        |state_ctrl                           |    74|
+|47    |  test               |Oled_Display                         |  3624|
+|48    |  venom_fight        |fight                                | 12640|
+|49    |    fightover        |koscreen_rom                         |  1936|
+|50    |    venom1           |timers_1                             |    63|
+|51    |    venom2           |timers_2                             |    63|
+|52    |  vol_disp           |Oled_vol                             |    59|
++------+---------------------+-------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:06:31 ; elapsed = 00:06:36 . Memory (MB): peak = 1154.930 ; gain = 898.270
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 43 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:06:12 ; elapsed = 00:06:28 . Memory (MB): peak = 1154.930 ; gain = 663.164
+Synthesis Optimization Complete : Time (s): cpu = 00:06:31 ; elapsed = 00:06:36 . Memory (MB): peak = 1154.930 ; gain = 898.270
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 5231 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 32 instances were transformed.
+  FDRE_1 => FDRE (inverted pins: C): 31 instances
+  FDSE_1 => FDSE (inverted pins: C): 1 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+281 Infos, 152 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:06:37 ; elapsed = 00:06:42 . Memory (MB): peak = 1154.930 ; gain = 910.914
+WARNING: [Constraints 18-5210] No constraint will be written out.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/arv19/Downloads/newfileat452pm.xpr/SoundDisplay/SoundDisplay.runs/synth_1/Top_Student.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file Top_Student_utilization_synth.rpt -pb Top_Student_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.108 . Memory (MB): peak = 1154.930 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Apr  3 19:39:47 2021...

@@ -1,0 +1,121 @@
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+----------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2018.2 (win64) Build 2258646 Thu Jun 14 20:03:12 MDT 2018
+| Date         : Sat Apr  3 19:41:06 2021
+| Host         : DESKTOP-LURHGU7 running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file Top_Student_control_sets_placed.rpt
+| Design       : Top_Student
+| Device       : xc7a35t
+----------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Number of unique control sets                            |    51 |
+| Unused register locations in slices containing registers |   104 |
++----------------------------------------------------------+-------+
+
+
+2. Histogram
+------------
+
++--------+--------------+
+| Fanout | Control Sets |
++--------+--------------+
+|      2 |            5 |
+|      4 |            1 |
+|      8 |            2 |
+|     10 |            1 |
+|     12 |            2 |
+|     14 |            2 |
+|    16+ |           38 |
++--------+--------------+
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             496 |          123 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |             954 |          128 |
+| Yes          | No                    | No                     |             184 |           32 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             262 |           44 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------------------+--------------------------------------------+------------------------------------------+------------------+----------------+
+|          Clock Signal         |                Enable Signal               |             Set/Reset Signal             | Slice Load Count | Bel Load Count |
++-------------------------------+--------------------------------------------+------------------------------------------+------------------+----------------+
+|  venom_fight/venom1/CLK       |                                            |                                          |                1 |              2 |
+|  lv1/traveltotrapdoor/CLK     |                                            |                                          |                1 |              2 |
+|  sixhz_clock                  |                                            |                                          |                1 |              2 |
+| ~clk6p25m_BUFG                |                                            |                                          |                1 |              2 |
+|  peakvsmic/twentykhz/clktouse |                                            |                                          |                1 |              2 |
+|  my_menu/fps/CLK              |                                            |                                          |                2 |              4 |
+|  lv1/randomname/CLK           |                                            | state_check/SS[0]                        |                1 |              8 |
+|  lv1/traveltotrapdoor/CLK     | lv1/password[3]_i_2_n_0                    | lv1/reset                                |                1 |              8 |
+|  peakvsmic/twentykhz/clktouse |                                            | peakvsmic/p_2_out[4]                     |                1 |             10 |
+|  peakvsmic/seven_segclock     |                                            |                                          |                1 |             12 |
+|  clk6p25m_BUFG                | test/E[0]                                  | test/SR[0]                               |                3 |             12 |
+|  lv1/traveltotrapdoor/CLK     | lv1/sprite1_col[6]_i_1_n_0                 | lv1/reset                                |                2 |             14 |
+|  clk6p25m_BUFG                | state_check/E[0]                           |                                          |                3 |             14 |
+|  peakvsmic/seven_segclock     | peakvsmic/an[2]_i_1_n_0                    |                                          |                2 |             16 |
+|  lv1/traveltotrapdoor/CLK     | lv1/sprite2_row[7]_i_1_n_0                 | lv1/reset                                |                4 |             16 |
+|  sixhz_clock                  | state_check/sprite1_col_reg[7][0]          | venom_fight/reset                        |                3 |             16 |
+|  sixhz_clock                  | state_check/venomhealth_ending_reg[7][0]   | venom_fight/reset                        |                3 |             16 |
+|  sixhz_clock                  | state_check/sprite2_col_reg[7]_0[0]        | venom_fight/reset                        |                3 |             16 |
+|  sixhz_clock                  | venom_fight/spideyhealth_ending[7]_i_1_n_0 | venom_fight/reset                        |                3 |             16 |
+|  lv1/traveltotrapdoor/CLK     | state_check/sprite2_col_reg[7][0]          | lv1/reset                                |                3 |             18 |
+|  lv1/randomname/CLK           | state_check/sprite2_col_reg[7][0]          |                                          |                2 |             18 |
+|  clk6p25m_BUFG                |                                            | test/SS[0]                               |                8 |             20 |
+|  lv1/randomname/CLK           | state_check/show_combi_reg[0][0]           |                                          |                3 |             20 |
+| ~microphone/J_MIC3_Pin4_OBUF  |                                            |                                          |                5 |             24 |
+|  a/CLK                        |                                            |                                          |                3 |             24 |
+|  CLOCK_IBUF_BUFG              |                                            | a/CLK                                    |                3 |             24 |
+|  peakvsmic/twentykhz/clktouse | peakvsmic/maximum[11]_i_1_n_0              |                                          |                2 |             24 |
+|  peakvsmic/twentykhz/clktouse | sw_IBUF[0]                                 | peakvsmic/count[13]_i_1_n_0              |                4 |             26 |
+|  CLOCK_IBUF_BUFG              | peakvsmic/fourth_seg[6]_i_1_n_0            |                                          |                2 |             28 |
+|  venom_fight/venom1/CLK       | state_check/oled_spidey_data_reg[15][0]    |                                          |                8 |             32 |
+|  clk6p25m_BUFG                | lv0/up_sig/a/E[0]                          |                                          |               10 |             32 |
+|  lv2/ledclockglass/CLK        |                                            |                                          |               10 |             32 |
+| ~clk6p25m_BUFG                |                                            | reset_sig/a/reset                        |                4 |             34 |
+| ~clk6p25m_BUFG                | test/delay[0]_i_1_n_0                      | reset_sig/a/reset                        |                5 |             40 |
+|  lv2/clockinuse               |                                            |                                          |               13 |             52 |
+|  CLOCK_IBUF_BUFG              |                                            | b/clear                                  |                8 |             64 |
+|  CLOCK_IBUF_BUFG              |                                            | a/clear                                  |                8 |             64 |
+|  CLOCK_IBUF_BUFG              |                                            | lv1/randomname/count[0]_i_1__3_n_0       |                8 |             64 |
+|  CLOCK_IBUF_BUFG              |                                            | lv1/traveltotrapdoor/count[0]_i_1__5_n_0 |                8 |             64 |
+|  CLOCK_IBUF_BUFG              |                                            | venom_fight/venom2/clear                 |                8 |             64 |
+|  CLOCK_IBUF_BUFG              |                                            | venom_fight/venom1/clear                 |                8 |             64 |
+|  CLOCK_IBUF_BUFG              |                                            | peakvsmic/twentykhz/clear                |                8 |             64 |
+|  CLOCK_IBUF_BUFG              |                                            | lv2/ledclockglass/clear                  |                8 |             64 |
+|  CLOCK_IBUF_BUFG              |                                            | lv1/travelontrapdoor/clear               |                8 |             64 |
+|  CLOCK_IBUF_BUFG              |                                            | lv2/traveltotrapdoor/count[0]_i_1__7_n_0 |                8 |             64 |
+|  clk6p25m_BUFG                |                                            | my_menu/fps/clear                        |                8 |             64 |
+|  CLOCK_IBUF_BUFG              |                                            | peakvsmic/thirtykhz/count[0]_i_1__1_n_0  |                8 |             64 |
+| ~clk6p25m_BUFG                | test/state                                 | reset_sig/a/reset                        |               10 |             64 |
+| ~clk6p25m_BUFG                |                                            | test/spi_word[39]_i_1_n_0                |               15 |             90 |
+|  clk6p25m_BUFG                |                                            |                                          |               36 |            166 |
+|  CLOCK_IBUF_BUFG              |                                            |                                          |               48 |            172 |
++-------------------------------+--------------------------------------------+------------------------------------------+------------------+----------------+
+
+
