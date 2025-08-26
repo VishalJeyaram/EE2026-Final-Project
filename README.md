@@ -1,4 +1,4 @@
-#EE2026 Digital Design, Electrical and Computer Engineering, Y1 Sem 2
+EE2026 Digital Design, Electrical and Computer Engineering, Y1 Sem 2
 
 This repository contains the EE2026 Project Report and related files for the course Digital Design.
 
