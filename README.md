@@ -7,20 +7,9 @@ The project involved designing and implementing a set of **mini-games and scenar
 
 The aim was to demonstrate creativity, hardware-software integration, and mastery of digital design principles.  
 
----
-
-## 👥 Team
-- **Vishal Jeyaram (A0218188W)**  
-- **Sridharan Arvind Srinivasan (A0218441L)**  
-
-**Official Lab Session:** Monday PM  
-**Group ID:** S1_20  
-
----
-
 ## 🎮 Project Features
 
-### 1. Real-time Audio Volume Indicator (Vishal)  
+### 1. Real-time Audio Volume Indicator  
 - **Inputs:** `SW[0]`, `SW[11]`  
 - Displays mic input on 16 LEDs.  
 - Switch between raw mic input and peak intensity.  
@@ -28,41 +17,41 @@ The aim was to demonstrate creativity, hardware-software integration, and master
 
 ---
 
-### 2. Graphical Visualisations & Configurations (Arvind)  
+### 2. Graphical Visualisations & Configurations 
 - **Inputs:** `SW[12–15]`  
 - Configurable border size, color theme, border visibility, and volume bar toggle.  
 
 ---
 
-### 3. Menu System (Team)  
+### 3. Menu System 
 - **Inputs:** `btnR`, `btnL`, `btnC`, `SW[1]`  
 - Navigate between modes using left/right buttons.  
 - Global reset with `SW[1]`.  
 
 ---
 
-### 4. Handcuff Game (Team)  
+### 4. Handcuff Game
 - **Inputs:** `btnR`, `btnL`, `btnU`, `btnD`, `btnC`  
 - Press combinations to release a character from handcuffs.  
 - Failure to press enough resets the game.  
 
 ---
 
-### 5. Corridor (Arvind)  
+### 5. Corridor 
 - **Inputs:** `PmodMIC3`, `btnC`  
 - Mic input acts as a password (high/low sequence).  
 - Correct password at the right time activates trapdoor to stop the guard.  
 
 ---
 
-### 6. Glass Wall (Vishal)  
+### 6. Glass Wall 
 - **Inputs:** `PmodMIC3`, `btnR`, `btnC`  
 - Player cracks the glass by gradually increasing mic intensity.  
 - Once cracked, the character can run through to shatter it.  
 
 ---
 
-### 7. Fighting Game – Spider-Man vs Venom (Team)  
+### 7. Fighting Game – Spider-Man vs Venom 
 - **Inputs:** `btnR`, `btnU`, `btnL`, `btnD`, `btnC`, `SW[2]`, `SW[10]`, `PmodMIC3`  
 - Two-player game (Spider-Man vs Venom).  
 - Attack by toggling switches, reduce opponent’s health.  
